@@ -1,0 +1,40 @@
+Return-Path: <alerts@securemail-demo.com>
+Received: from mailout04.securemail-demo.com (mailout04.securemail-demo.com [198.51.100.24])
+        by mx1.isp-example.net (Postfix) with ESMTPS id 94F8F24012
+        for <user@example.com>; Tue, 18 Feb 2025 11:42:13 +0530 (IST)
+Received: from smtp.securemail-demo.com (smtp.securemail-demo.com [203.0.113.45])
+        (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+        by mailout04.securemail-demo.com with ESMTPS id zyHGf8943kL
+        for <user@example.com>; Tue, 18 Feb 2025 06:12:10 +0000 (UTC)
+Received: from host-22-11-77.isp-unknown.net (unknown [10.8.44.29])
+        by smtp.securemail-demo.com with ESMTPSA id 8YtKsd00221
+        for <alerts@securemail-demo.com>; Tue, 18 Feb 2025 06:11:59 +0000 (UTC)
+Authentication-Results: mx1.isp-example.net;
+        spf=pass (sender SPF authorized) smtp.mailfrom=alerts@securemail-demo.com;
+        dkim=pass header.i=@securemail-demo.com;
+        dmarc=pass header.from=securemail-demo.com
+DKIM-Signature: v=1; a=rsa-sha256; d=securemail-demo.com; s=dk2024;
+        c=relaxed/relaxed; q=dns/txt; h=from:subject:date:message-id:mime-version;
+        bh=YZj3+BrRkBYfM7MO9H3ZZdzF81qVts/7ZukzcABhGOM=;
+        b=L9ccT4k5FGJH3Qp9mD0bZq0F8f+a8m17iZKjlq2ad4vTl7m8cXnR6qVj2LZAsO0zK
+         Lz7W1WuB4RqNDRqpfaXZ1tKMW0NB9iXjYfJ4N2wu4Rlx7nWlZ9E3HyRw8s==
+Received-SPF: Pass (spf-checker: domain owner authorizes IP) client-ip=198.51.100.24; envelope-from=alerts@securemail-demo.com;
+Message-ID: <f9923af3b21$e8b92340$9a2b69c0$@securemail-demo.com>
+From: "SecureMail Alerts" <alerts@securemail-demo.com>
+To: <user@example.com>
+Subject: Important Notice: Login Attempt Detected
+Date: Tue, 18 Feb 2025 06:11:58 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+        boundary="----=_Part_19123_1293849123.1739861518000"
+X-Mailer: SecureMail Notification System v3.1
+X-Originating-IP: [10.8.44.29]
+
+------=_Part_19123_1293849123.1739861518000
+Content-Type: text/plain; charset=UTF-8
+
+We detected a login attempt on your account.
+
+If this was not you, please reset your password immediately.
+
+------=_Part_19123_1293849123.1739861518000--

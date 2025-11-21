@@ -1,0 +1,39 @@
+Return-Path: <support@paypa1-secure.com>
+Received: from unknown (HELO mail.paypal.com) (185.22.99.14)
+        by mx1.recipientmail.net with SMTP id A9F3C1E02
+        for <victim@example.com>; Wed, 19 Feb 2025 04:19:54 +0530 (IST)
+
+Received: from 172.16.8.22 (unknown [172.16.8.22])
+        by mail.paypal.com with SMTP id F23JKL22
+        for <victim@example.com>; Tue, 18 Feb 2025 22:49:50 +0000 (UTC)
+
+Received: from WIN-33IRSX0 (UNKNOWN [10.0.0.55])
+        by smtp-router.private with ESMTPA id 8S0D992
+        for <support@paypa1-secure.com>; Tue, 18 Feb 2025 22:49:50 +0000 (UTC)
+
+Authentication-Results: mx1.recipientmail.net;
+        spf=fail (domain of paypa1-secure.com does not designate 185.22.99.14)
+                smtp.mailfrom=support@paypa1-secure.com;
+        dkim=none (no signature);
+        dmarc=fail (alignment failed) header.from=paypa1-secure.com
+
+Received-SPF: Fail (SPF check failed) client-ip=185.22.99.14; envelope-from=support@paypa1-secure.com;
+
+Message-ID: <138912348123.23904823.@paypa1-secure.com.fake.local>
+From: PayPal Security <support@paypa1-secure.com>
+Reply-To: PayPal Security <safety@paypa1-secure.com>
+To: <victim@example.com>
+Subject: Urgent: Your Account Has Been Limited
+Date: Tue, 18 Feb 2025 22:49:49 +0000
+X-Mailer: Microsoft Outlook 16.0 (spoofed)
+X-Originating-IP: 172.16.8.22
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Dear Customer,</p>
+<p>Your PayPal account has been limited due to suspicious activity.</p>
+<p>Please <a href="http://verify-paypa1-security-login.com">verify your account</a> immediately.</p>
+</body>
+</html>
