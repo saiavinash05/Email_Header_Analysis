@@ -18,6 +18,7 @@ A Python-based forensic toolkit to analyze email headers, trace routing paths, v
 ---
 
 ## 📁 Project Structure
+```
 Email_Header_Analysis/
 │
 ├── header_analysis.py # Core forensic engine
@@ -25,7 +26,7 @@ Email_Header_Analysis/
 ├── header.txt # Sample real email header
 ├── spoofedheader.txt # Sample spoofed email header
 └── README.md # Project documentation
-
+```
 
 ---
 
@@ -95,30 +96,23 @@ Perfect for:
 ```bash
 git clone https://github.com/saiavinash05/Email_Header_Analysis
 cd Email_Header_Analysis
+```
 
 ### **2. Install Dependencies**
 ```bash
 pip install reportlab dnspython python-whois
+```
 
 ## ▶ Usage
 
 ### Run Header Analysis Only
 python header_analysis.py header.txt
 
-shell
-Copy code
-
 ### Generate PDF Report
 python report_generator.py header.txt output.pdf
 
-shell
-Copy code
-
 ### Example
 python report_generator.py spoofedheader.txt spoofed_report.pdf
-
-yaml
-Copy code
 
 ---
 
